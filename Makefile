@@ -1,0 +1,2 @@
+appname: main.c raylib/src/libraylib.a
+	gcc -o appname -Iraylib/src/ $$(pkg-config --cflags ruby) main.c raylib/src/libraylib.a -lm -lX11 $$(pkg-config --libs ruby)
